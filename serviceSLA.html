@@ -1,0 +1,525 @@
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="description" content="Rainbond是以应用为中心，面向云原生的企业应用操作系统，将企业数字资产抽象为应用模型（Rainbond Application Model），并通过容器化环境、敏捷DevOps、微服务架构、组件制品库、serverless部署、底层资源自动化运维等核心技术，通过搭建数字中台、加速前台业务需求响应，帮助企业获得面向未来的创新能力和竞争力。"/>
+        <meta name="keywords" content="视频教程，好雨, goodrain, Rainbond, 云帮, 以应用为中心, serverless, PaaS, SaaS, Kubernetes, 微服务架构, servicemesh, DevOps, CI/CD, 高效运维, 云原生, 公有云, 私有云, 混合云, 应用交付, 微服务, 容器云, 容器云平台, 容器云服务, 镜像构建, 源码构建, 云原生应用, 微服务, 微服务平台, springcloud微服务架构, service mesh, 服务网格, 微服务设计, sidecar, 行业云, 开发云, 智慧云, 云计算解决方案"/>       <meta name="viewport" content="width=1280,minimum-scale=0.5,maximum-scale=1.0,user-scalable=yes, initial-scale=1.0">
+    <title>好雨，让云落地_提供以应用为中心的云计算产品和服务 :: 好雨，让云落地_提供以应用为中心的云计算产品和服务</title>
+    <script type="text/javascript" src="./public/js/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="https://www.rainbond.com/js/visitor.js"></script>
+    <link href="./public/css/sla.css" rel="stylesheet">
+    <link href="./public/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.rainbond.com/css/visitor.css">
+</head>
+
+<body>
+    <header class="header-container common clearfix login-checked no-touch">
+        <div class="header-content">
+            <div class="header-body">
+                <div class="icon">
+                    <span class="nav-trigger"></span>
+                </div>
+                <div class="logo">
+                    <a href="/">
+                        <img src="./public/images/rainbond-online-log.svg">
+                    </a>
+                </div>
+                <div class="nav">
+                    <!-- <div class="nav-item nav-drop-down-wrap">
+                        <span>产品</span>
+                        <div class="nav-drop-down-container">
+                            <div class="nav-drop-down">
+                                <div class="item-container">
+                                    <p><a href="/">功能</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="nav-item">
+                        <span><a href="/">产品</a></span>
+                    </div>
+                    <div class="nav-item">
+                        <span><a href="/">价格</a></span>
+                    </div>
+                    <div class="nav-item nav-drop-down-wrap">
+                        <span>解决方案</span>
+                        <div class="nav-drop-down-container">
+                            <div class="nav-drop-down">
+                                <div class="item-container">
+                                    <p> <a href="https://www.goodrain.com/middle-platform/" target="_blank">搭建业务中台方案</a>
+                                    </p>
+                                    <p><a href="https://www.goodrain.com/business/" target="_blank">企业应用持续交付方案</a></p>
+                                    <p><a href="https://www.goodrain.com/saas/" target="_blank">行业应用商店</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-zone">
+                    <div class="login">
+                        <a target="_blank" href="https://cloud.goodrain.com/enterprise-server/login"
+                            class="button">登录</a>
+                    </div>
+                    <div class="register">
+                        <a target="_blank" href="https://cloud.goodrain.com/enterprise-server/registered"
+                            class="button">免费注册</a>
+                    </div>
+                </div>
+                <div class="mobile-nav">
+                    <div class="dropdown-list">
+                        <ul>
+                            <li class="dropdown has-submenu">
+                                <span class="label">产品</span>
+                                <div class="content">
+                                    <div class="menu">
+                                        <div class="content-label"><a href="/">功能</a></div>
+                                    </div>
+                                </div>
+                    </div>
+                    </li>
+                    <li class="dropdown">
+                        <span class="label"><a href="/pricing">价格</a></span>
+                    </li>
+                    <li class="dropdown has-submenu">
+                        <span class="label">解决方案</span>
+                        <div class="content">
+                            <div class="menu">
+                                <div class="content-label">
+                                    <a href="https://www.goodrain.com/middle-platform/" target="_blank">搭建业务中台方案</a>
+                                </div>
+                                <div class="content-label"><a href="https://www.goodrain.com/business/"
+                                        target="_blank">企业应用持续交付方案</a></div>
+                                <div class="content-label"><a href="https://www.goodrain.com/saas/"
+                                        target="_blank">行业应用商店</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="icon-user">登录/注册</div>
+            <div class="mobile-login-zone">
+                <div class="dropdown-list">
+                    <ul>
+                        <li class="dropdown">
+                            <div class="btn register">
+                                <a href="https://cloud.goodrain.com/enterprise-server/registered">免费注册</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <div class="btn login">
+                                <a href="https://cloud.goodrain.com/enterprise-server/login">登录</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div id="policy">
+        <h3>好雨Rainbond Cloud服务等级协议（SLA）</h3>
+
+        <p class="first">
+            <span class="row">本服务协议是北京好雨科技有限公司（BeiJing Goodrain Technology Co.,LTD，以下简称“好雨”）与您就好雨提供的企业应用管理平台Rainbond
+                Cloud服务（官方网站www.goodrain.com，产品网站www.rainbond.com，以下简称 “Rainbond Cloud
+                ”或“本服务”）相关事项所订立的有效合约（好雨科技服务条款）的补充说明，您应当阅读并遵守《好雨Rainbond Cloud
+                服务等级协议（SLA）》（以下简称“本协议”或“SLA”）。本协议包含本服务的术语和定义、服务可用性/服务成功率等级指标、赔偿方案、免责条款等相关内容。请您务必审慎阅读、充分理解各条款内容，限制、免责条款或者其他涉及您重大权益的条款可能会以加粗、加下划线等形式提示您重点注意。除非您已充分阅读、完全理解并接受本协议所有条款，否则，请您不要购买本服务。您单击“同意”、“下一步”或您的购买、使用等行为或者您以其他任何明示或者默示方式表示接受本协议的，即视为您已阅读并同意本协议的约束。本协议即在您与好雨之间产生法律效力，成为对双方均具有约束力的法律文件。</span>
+        </p>
+
+        <ol>
+            <li>
+                <strong>术语和定义</strong>
+                <p class="flex">
+                    <span>1.1&nbsp;&nbsp;</span>
+                    <span class="flex-col">
+                        <span>Rainbond Cloud 服务</span>
+                        <span class="txt">
+                            好雨为您提供的 Rainbond Cloud
+                            服务，包括DevOps、Srevisemesh微服务、CI/CD、自动化运维、无侵入架构、多云管理、中台制品库等功能服务，具体以您购买的服务以及 Rainbond Cloud
+                            提供的服务内容为准。您可以通过本服务使技术团队在云端高效协同，实践 DevOps，打通应用开发、测试、交付、运维完整链条，提升软件交付质量与速度。
+                        </span>
+                    </span>
+
+                </p>
+                <p class="flex">
+                    <span>1.2&nbsp;&nbsp;</span>
+                    <span class="flex-col">
+                        <span>服务不可用</span>
+                        <span class="txt">
+                            Rainbond Cloud 服务不可用单位时间：Rainbond Cloud 服务在单位时间内（5 分钟为一个统计粒度）错误率大于
+                            0.05%（不含本数），视为该单位时间服务不可用。在连续 10 分钟或更长时间内， DevOps 服务均持续不可用才计入服务不可用时间，低于连续 10 分钟不计入服务不可用时间。
+                        </span>
+                        <span class="txt">
+                            错误率： 错误率是指由 Rainbond Cloud 返回的失败请求数占单位时间内（5分钟内）用户请求数的比例。
+                        </span>
+                        <span class="txt">
+                            失败请求： 指 Rainbond Cloud 返回的错误码为服务器内部错误码的请求，包括 Internal Error（500错误） 或 Service
+                            Unavailable（503错误）两种错误码；但不包括触发频控导致的限流请求或者 Rainbond Cloud 升级、变更、停机而导致的失败请求。用户请求指的是 Rainbond
+                            Cloud 服务器端接收到的用户发送的请求，但不包括未经身份验证、鉴权失败或者欠费停服状态下的请求。用户端由于黑客攻击而对 Rainbond Cloud
+                            的请求，或者由于配置了跨区域复制、生命周期规则而在后端异步执行的请求，均不视为有效请求或失败请求。
+                        </span>
+                    </span>
+
+                </p>
+                <p class="flex">
+                    <span>1.3&nbsp;&nbsp;</span>
+                    <span class="flex-col">
+                        <span>服务不可用时间合计</span>
+                        <span class="txt">
+                            服务不可用时间为服务月度内 Rainbond Cloud 服务不可用的分钟数之和。
+                        </span>
+                    </span>
+
+                </p>
+                <p class="flex">
+                    <span>1.4&nbsp;&nbsp;</span>
+                    <span class="flex-col">
+                        <span>服务月度</span>
+                        <span class="txt">
+                            服务月度是指您购买本服务的服务期限所包含的各个自然月度，如您购买三个月本服务，服务开通之日为 03 月 17 日，则包含 4 个服务月度，其中第 1 个服务月度是指 03 月 17
+                            日到 03 月 31 日，第 2 个服务月度是指 04 月 01 日到 04 月 30 日，第 3 个服务月度是指 05 月 01 日到 05 月 31 日，第 4 个服务月度是指
+                            06 月 01 日到 06 月16 日。服务可用性按服务月度单独核算。
+                        </span>
+                    </span>
+
+                </p>
+                <p class="flex">
+                    <span>1.5&nbsp;&nbsp;</span>
+                    <span class="flex-col">
+                        <span>月度服务费用</span>
+                        <span class="txt">
+                            Rainbond Cloud 服务为预付费模式，月度服务费用指您在一个服务月度中就 Rainbond Cloud 服务所实际消费的服务费用总额，不包含已经支付尚未消费的部分。
+                            月度服务费不含用代金券、优惠券、服务费减免等抵扣的费用。
+                        </span>
+                    </span>
+
+                </p>
+
+            </li>
+            <li>
+                <strong>服务可用性</strong>
+                <p class="flex">
+                    <span>2.1&nbsp;&nbsp;</span>
+                    <span class="flex-col">
+                        <span>服务可用性计算方式</span>
+                        <span class="txt">
+                            <strong>服务可用性 =（1 - 服务不可用时间 / 服务月度内总时间）x 100%</strong>
+                        </span>
+                    </span>
+
+                </p>
+                <p class="flex">
+                    <span>2.2&nbsp;&nbsp;</span>
+                    <span class="flex-col">
+                        <span>服务可用性</span>
+                        <span class="txt">
+                            Rainbond Cloud 提供的服务可用性具体为：
+                        </span>
+                        <span class="txt">
+                            <strong>Rainbond Cloud 服务可用性不低于 99.95%。</strong>
+                        </span>
+                        <span class="txt">
+                            假设当月为 30 天，即用户每月<strong> Rainbond Cloud 服务</strong>30 天 x 24 小时 x 60 分钟 x 99.95% =
+                            43178.4分钟，即允许存在 43200 - 43178.4 = 21.6 分钟的不可用时间。
+                        </span>
+                    </span>
+
+                </p>
+
+            </li>
+            <li>
+                <strong>赔偿方案</strong>
+                <p class="no-text-indent">对于本服务，如服务可用性低于本协议第 2 条约定标准，已付费购买服务的客户有权按照如下条款约定获得赔偿：</p>
+                <p class="flex">
+                    <span>3.1&nbsp;&nbsp;</span>
+                    <span class="txt">
+                        赔偿标准
+                    </span>
+                </p>
+                <ul class="level3-ul">
+                    <li class="flex"><span>（1）</span><span>赔偿以 Rainbond Cloud 发放 ***虚拟金额*** 形式实现，发放的 ***虚拟金额***
+                            不能折现、不开具发票，仅限您通过您的 Rainbond Cloud 账户使用本服务，您也不可以将代金券进行转让、赠予等。</span></li>
+                    <li class="flex">
+                        <span>（2）</span><span>如果某服务月度没有达到服务可用性标准，赔偿额按照相应未达标服务月度单独计算，<strong>赔偿总额不超过相应未达标服务月度内您就本服务支付的相应月度服务费（此处的月度服务费不含用代金券、优惠券、服务费减免等抵扣的费用）。</strong></span>
+                    </li>
+                </ul>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>服务月度的服务可用性</th>
+                            <th>赔偿虚拟金额</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>低于 99.95% 但等于或高于 99.0%</td>
+                            <td>未达标服务总月度服务费的 10%</td>
+                        </tr>
+                        <tr>
+                            <td>低于 99.0% 但等于或高于 95.0% </td>
+                            <td>未达标服务总月度服务费的 25%</td>
+                        </tr>
+                        <tr>
+                            <td>低于 95.0%</td>
+                            <td>未达标服务总月度服务费的 50%</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="flex">
+                    <span>3.2&nbsp;&nbsp;</span>
+                    <span class="txt">
+                        赔偿申请时限
+                    </span>
+                </p>
+                <ul class="level3-ul">
+                    <li class="flex">
+                        <span>（1）</span>
+                        <span>如某服务月度没有达到服务可用性标准，您可以在没有达标的相应服务月度结束后的次月的3日后（每月1-3日为好雨内部结算日），
+                            <strong>通过您相应账户的工单系统或联系服务专员提出赔偿申请。</strong>
+                            您提出赔偿申请后好雨会进行相应核实，对于服务月度的服务可用性的计算，若双方出现争议的，双方均同意最终以 Rainbond Cloud 的后台记录为准。
+                        </span></li>
+                    <li class="flex">
+                        <span>（2）</span>
+                        <span>
+                            <strong>您最晚提出赔偿申请的时间不应超过未达标的相应服务月度结束后30个自然日。</strong>
+                            如果您在未达标的相应服务月度结束后的30日内未提出赔偿申请或者您通过非本协议约定的方式提出申请的，均视为您自动放弃要求赔偿的权利及向好雨主张其他权利的权利，好雨有权不受理您的赔偿申请，不对您进行任何赔偿或补偿。</span>
+                    </li>
+                </ul>
+
+            </li>
+            <li>
+                <strong>免责条款</strong>
+                <p class="no-text-indent">
+                    <strong>由以下原因导致的服务不可用，相应服务不可用时间不属于服务不可用的计算范畴和好雨的赔偿范畴， Rainbond Cloud 服务团队无须向您承担责任：</strong>
+                </p>
+                <p class="flex">
+                    <span>4.1&nbsp;&nbsp;</span>
+                    <span class="txt">
+                        Rainbond Cloud 服务团队预先通知您需要进行系统维护所引起的，包括割接、维修、升级和模拟故障演练。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>4.2&nbsp;&nbsp;</span>
+                    <span class="txt">
+                        任何好雨所属设备以外的网络、设备故障或配置调整引起的。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>4.3&nbsp;&nbsp;</span>
+                    <span class="txt">
+                        日常系统维护时间、隐式依赖的云服务器服务、云数据盘服务、负载均衡服务、私有网络服务、云监控服务的不可用时间。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>4.4&nbsp;&nbsp;</span>
+                    <span class="txt">
+                        构建任务所关联的用户代码仓库、第三方开源仓库、第三方镜像仓库不可连接导致的构建失败或构建长时间阻塞的。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>4.5&nbsp;&nbsp;</span>
+                    <span class="txt">
+                        您的应用接口或数据受到攻击或其他不当行为引起的。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>4.6&nbsp;&nbsp;</span>
+                    <span class="txt">
+                        您维护不当或保密不当致使数据、口令和密码等丢失或泄漏所引起的。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>4.7&nbsp;&nbsp;</span>
+                    <span class="txt">
+                        由于您的疏忽授权、错误操作、自有设备或第三方软件、设备引起的。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>4.8&nbsp;&nbsp;</span>
+                    <span class="txt">
+                        您未遵循 Rainbond 产品使用文档或使用建议引起的。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>4.9&nbsp;&nbsp;</span>
+                    <span class="txt">
+                        您内容违规或其他原因而导致域名被封禁而产生的错误。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>4.10&nbsp;&nbsp;</span>
+                    <span class="txt">
+                        您大规模流量突发增长未提前书面告知好雨所导致的可用性降低。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>4.11&nbsp;&nbsp;</span>
+                    <span class="txt">
+                        非好雨或产品原因造成的服务不可用或服务不达标的情况。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>4.12&nbsp;&nbsp;</span>
+                    <span class="txt">
+                        属于相关法律法规、相关协议、相关规则好雨单独发布的相关规则、说明等中所述的好雨可以免责、免除赔偿责任等的情况。
+                    </span>
+                </p>
+
+            </li>
+            <li>
+                <strong>附加说明</strong>
+                <p class="flex">
+                    <span>5.1&nbsp;&nbsp;</span>
+                    <span class="txt">
+                        双方确认并在此认可：在任何情况下，若您在使用本服务过程中因好雨违约原因造成您损失的，好雨的违约赔偿总额不超过您已经支付的相应违约服务对应的服务费总额。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>5.2&nbsp;&nbsp;</span>
+                    <span class="txt">
+                        好雨有权根据变化适时或必要时对本协议条款做出修改，您可以在好雨相关网站的最新版本中查阅相关协议条款。如您不同意好雨对协议所做的修改，您有权停止使用本服务，如您继续使用本服务，则视为您接受修改后的协议。
+                    </span>
+                </p>
+
+            </li>
+
+        </ol>
+        <hr>
+        <p class="bottom">此协议最后更新日期为 2020年 3月 10日，最终解释权归北京好雨科技有限公司所有。</p>
+    </div>
+    <footer class="footer-container">
+        <div class="footer">
+            <div class="left">
+                <a href="/">
+                    <img class="logo" src="./public/images/rainbond.png">
+                </a>
+                <ul class="list">
+                    <li>&nbsp;</li>
+                    <li style="width:200px;text-align:center;"><a href="tel:01064666786">010-64666786</a></li>
+                    <li>
+                        <div class="share" style="width:200px;justify-content: center;">
+                            <div class="share-item qrcode weixin">
+                                <img class="share-img" id="wechat" src="./public/images/weixin.png">
+                                <div class="dropdown up">
+                                    <img src="./public/images/weixin.jpeg" alt="Rainbond 微信公众号二维码">
+                                </div>
+                            </div>
+                            <a class="share-item" target="_blank" href="https://github.com/goodrain" target="_blank">
+                                <img class="share-img" src="./public/images/github.svg">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="us">
+                <div class="us-row">
+                    <div class="us-col item1">
+                        <h3>方案</h3>
+                        <ul class="list">
+                            <li><a target="_blank" href="https://www.goodrain.com/middle-platform/">搭建业务中台方案</a></li>
+                            <li><a target="_blank" href="https://www.goodrain.com/business/">搭建2B应用持续交付方案</a></li>
+                            <li><a target="_blank" href="https://www.goodrain.com/saas/">行业应用商店</a></li>
+                            <li>
+                                <a class="visitor" data-title="请提供您的联系方式，我们将及时回访" data-source="企业官网底部联系我们">联系技术专家</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="us-col item2">
+                        <h3>产品</h3>
+                        <ul class="list">
+                            <li><a target="_blank" href="https://www.rainbond.com">Rainbond</a></li>
+                            <li><a target="_blank" href="https://cloud.goodrain.com/enterprise-server/login">Rainbond
+                                    Cloud</a></li>
+                            <li><a target="_blank"
+                                    href="https://v5.2-doc.rainbond.com/docs/quick-start/rainbond_install/">Rainbond
+                                    开源</a></li>
+                            <li><a class="visitor" data-title="请提供您的联系方式，我们将及时回访" data-source="企业官网底部联系我们">产品定制咨询</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="us-col item3">
+                        <h3>资源</h3>
+                        <ul class="list">
+                            <li><a target="_blank" href="https://v5.2-doc.rainbond.com/docs/">文档</a></li>
+                            <li><a target="_blank" href="https://t.goodrain.com/" target="_blank">社区</a></li>
+                            <li><a target="_blank" href="https://v5.2-doc.rainbond.com/video/" target="_blank">视频</a>
+                            </li>
+                            <li><a target="_blank" href="https://github.com/goodrain">Github</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="us-col item4">
+                        <h3>&nbsp;</h3>
+                        <ul class="list">
+                            <li>组织一个分享会，把我们介绍给你的团队</li>
+                            <li style="font-size: 12px">10min快速了解好雨科技Goodrain和云帮Rainbond</li>
+                            <li>
+                                <a class="visitor" data-title="请提供您的联系方式，我们将及时回访" data-source="企业官网底部联系我们">
+                                    <div class="demos">
+                                        <img src="./public/images/image_ys.png" alt="">
+                                        <span>预约演示</span>
+                                    </div>
+                                </a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="us-col item6">
+                        <h3>联系我们</h3>
+                        <ul class="list">
+                            <li><a href="tel:01064666786">010-64666786</a></li>
+                            <li>
+                                <div class="share">
+                                    <div class="share-item qrcode weixin">
+                                        <img class="share-img" id="wechat" src="./public/images/weixin.png">
+                                        <div class="dropdown up">
+                                            <img src="./public/images/weixin.jpeg" alt="Rainbond 微信公众号二维码">
+                                        </div>
+                                    </div>
+                                    <a class="share-item" href="https://github.com/goodrain" target="_blank">
+                                        <img class="share-img" src="./public/images/github.svg">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-hr first"></div>
+            <div class="mobile-hr second"></div>
+            <div class="mobile-hr three"></div>
+        </div>
+        <div class="copyright">
+            <div class="copyright-content">
+                <div class="info">
+                    <p class="cr-pc">
+                        <a href="/">© 2019 北京好雨科技有限公司 京ICP备15028663</a>
+                    </p>
+                    <div class="cr-mb">
+                        <p>
+                            <a href="https://coding.net">© 2019 北京好雨科技有限公司 京ICP备15028663</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var modalVisitor = new ModalVisitor({ width: 400, height: 430 });
+            $(".visitor").click(function () {
+                var title = $(this).data("title") || "申请Rainbond在线试用"
+                var source = $(this).data("source") || "好雨企业官网"
+                modalVisitor.show({ title: title, source: source });
+            });
+
+        });
+    </script>
+</body>
+
+</html>

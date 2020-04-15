@@ -1,0 +1,773 @@
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="好雨提供以应用为中心的云计算产品服务，致力于通过无服务器PaaS——Rainbond和云原生SaaS——云市两款核心产品释放企业IT价值，帮助企业完成容器化、微服务架构、云原生、DevOps工作流、自动化运维等技术升级和转型，获得面向未来的竞争力和创新能力" />
+    <meta name="keywords"
+        content="好雨, goodrain, Rainbond, 云帮, 以应用为中心, serverless, PaaS, SaaS, Kubernetes, 微服务架构, servicemesh, DevOps, CI/CD, 高效运维, 云原生, 公有云, 私有云, 混合云, 应用交付, 微服务, 容器云, 容器云平台, 容器云服务, 镜像构建, 源码构建, 云原生应用, 微服务, 微服务平台, springcloud微服务架构, service mesh, 服务网格, 微服务设计, sidecar, 行业云, 开发云, 智慧云, 云计算解决方案" />
+    <meta name="viewport" content="width=1280,minimum-scale=0.5,maximum-scale=1.0,user-scalable=yes, initial-scale=1.0">
+    <title>好雨，让云落地_提供以应用为中心的云计算产品和服务 :: 好雨，让云落地_提供以应用为中心的云计算产品和服务</title>
+    <script type="text/javascript" src="./public/js/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="https://www.rainbond.com/js/visitor.js"></script>
+    <link href="./public/css/terms.css" rel="stylesheet">
+    <link href="./public/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.rainbond.com/css/visitor.css">
+  
+</head>
+
+<body>
+    <header class="header-container common clearfix login-checked no-touch">
+        <div class="header-content">
+            <div class="header-body">
+                <div class="icon">
+                    <span class="nav-trigger"></span>
+                </div>
+                <div class="logo">
+                    <a href="/">
+                        <img src="./public/images/rainbond-online-log.svg">
+                    </a>
+                </div>
+                <div class="nav">
+                    <!-- <div class="nav-item nav-drop-down-wrap">
+                        <span>产品</span>
+                        <div class="nav-drop-down-container">
+                            <div class="nav-drop-down">
+                                <div class="item-container">
+                                    <p><a href="/">功能</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="nav-item">
+                            <span><a href="/">产品</a></span>
+                        </div>
+                    <div class="nav-item">
+                        <span><a href="/">价格</a></span>
+                    </div>
+                    <div class="nav-item nav-drop-down-wrap">
+                        <span>解决方案</span>
+                        <div class="nav-drop-down-container">
+                            <div class="nav-drop-down">
+                                <div class="item-container">
+                                    <p> <a href="https://www.goodrain.com/middle-platform/" target="_blank">搭建业务中台方案</a>
+                                    </p>
+                                    <p><a href="https://www.goodrain.com/business/" target="_blank">企业应用持续交付方案</a></p>
+                                    <p><a href="https://www.goodrain.com/saas/" target="_blank">行业应用商店</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-zone">
+                    <div class="login">
+                        <a target="_blank" href="https://cloud.goodrain.com/enterprise-server/login" class="button">登录</a>
+                    </div>
+                    <div class="register">
+                        <a target="_blank" href="https://cloud.goodrain.com/enterprise-server/registered" class="button">免费注册</a>
+                    </div>
+                </div>
+                <div class="mobile-nav">
+                    <div class="dropdown-list">
+                        <ul>
+                            <li class="dropdown has-submenu">
+                                <span class="label">产品</span>
+                                <div class="content">
+                                    <div class="menu">
+                                        <div class="content-label"><a href="/">功能</a></div>
+                                    </div>
+                                </div>
+                    </div>
+                    </li>
+                    <li class="dropdown">
+                        <span class="label"><a href="/pricing">价格</a></span>
+                    </li>
+                    <li class="dropdown has-submenu">
+                        <span class="label">解决方案</span>
+                        <div class="content">
+                            <div class="menu">
+                                <div class="content-label">
+                                    <a href="https://www.goodrain.com/middle-platform/" target="_blank">搭建业务中台方案</a>
+                                </div>
+                                <div class="content-label"><a href="https://www.goodrain.com/business/"
+                                        target="_blank">企业应用持续交付方案</a></div>
+                                <div class="content-label"><a href="https://www.goodrain.com/saas/"
+                                        target="_blank">行业应用商店</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="icon-user">登录/注册</div>
+            <div class="mobile-login-zone">
+                <div class="dropdown-list">
+                    <ul>
+                        <li class="dropdown">
+                            <div class="btn register">
+                                <a href="https://cloud.goodrain.com/enterprise-server/registered">免费注册</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <div class="btn login">
+                                <a href="https://cloud.goodrain.com/enterprise-server/login">登录</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div id="policy">
+        <h3>好雨科技&nbsp;服务条款</h3>
+
+        <p class="first">
+            <span class="row">本服务条款是北京好雨科技有限公司（BeiJing Goodrain Technology Co.,LTD，以下简称“好雨”）与您就好雨提供的企业应用管理平台Rainbond
+                及附带的企业应用商店Rainstore服务（官方网站 <a class="blue" href="https://www.goodrain.com">www.goodrain.com
+                </a>，相关事项所订立的有效合约。您通过盖章、网络页面点击确认或以其他方式选择接受本服务条款，包括但不限于未点击确认本服务条款而事实上使用了 Rainbond
+                服务，即表示您与好雨已达成协议并同意接受本服务条款的全部约定内容。如若双方盖章文本与网络页面点击确认或以其他方式选择接受之服务条款文本，存有不一致之处，以双方盖章文本为准。在接受本服务之前，请您仔细阅读本服务条款的全部内容，如果您对本服务条款有疑问的，请向好雨相关业务部门进行询问。如果您不同意本服务条款的任意内容，或者无法准确理解好雨对条款的解释，请停止使用本网站。</span>
+        </p>
+
+        <ol>
+            <li>
+                <strong>服务内容</strong>
+                <p class="no-text-indent">本条款中“服务”指好雨向您提供
+                    <a class="blue" href="https://www.rainbond.com">Rainbond</a>
+                    <a class="blue" href="https://www.goodrain.com">Goodrain</a>
+                    网站上所展示的软件功能以及提供的技术支持和网络支持服务。</p>
+                <p class="flex">
+                    <span>1.1&nbsp;</span>
+                    <span>
+                        软件研发工具服务功能包括网站所展示功能服务。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>1.2&nbsp;</span>
+                    <span>技术支持服务指的是通过网站上指定的支持渠道，提供针对网站内所展示功能的使用指引、问题答疑。</span>
+                </p>
+                <p class="flex">
+                    <span>1.3&nbsp;</span>
+                    <span>网络支持服务指的是保证Rainbond提供的所有功能服务能顺利被访问使用。</span>
+                </p>
+            </li>
+            <li>
+                <strong>服务费用</strong>
+                <p class="flex">
+                    <span>2.1&nbsp;</span>
+                    <span>Rainbond提供开源、在线、私有化部署等使用方式，以及免费和付费等不同等级的服务，如您选择了付费的服务，仅提供预付费的方式。</span>
+                </p>
+                <p class="flex">
+                    <span>2.2&nbsp;</span>
+                    <span>服务费用将网站和产品等相关页面公示，您可自行选择具体服务类型并按实际价格予以支付。</span>
+                </p>
+                <p class="flex">
+                    <span>2.3&nbsp;</span>
+                    <span>好雨保留您未按照约定支付费用前不向您提供相对应的产品服务和技术支持，及终止产品和技术支持的权利。</span>
+                </p>
+                <p class="flex">
+                    <span>2.4&nbsp;</span>
+                    <span>
+                        您完全理解Rainbond价格体系中所有的赠送、折扣等优惠活动均为Rainbond在正常服务价格之外的一次性优惠，针对优惠活动的产品服务和技术支持应遵循网站和产品等相关页面公示。
+                    </span>
+                </p>
+
+            </li>
+            <li>
+                <strong>权利义务</strong>
+                <p class="flex">
+                    <span>3.1&nbsp;</span>
+                    <span>您的权利和义务</span>
+                </p>
+                <p class="flex level3">
+                    <span>3.1.1&nbsp;</span>
+                    <span>您同意遵守本服务条款以及服务展示页面的相关管理规范及流程，您了解本协议及规范等的内容可能会不时变更。如您不同意好雨对本服务条款相关条款所做的修改，您有权停止使用好雨的服务，此等情况下，好雨应与您进行服务费结算（如有），并且您应将业务应用及业务数据迁出。如您继续使用好雨服务，则视为您接受好雨对本服务条款相关条款所做的修改。</span>
+                </p>
+                <p class="flex level3">
+                    <span>3.1.2&nbsp;</span>
+                    <span>您应按照网站和产品等相关页面公示及本服务条款的约定支付相应服务费用。</span>
+                </p>
+                <p class="flex level3">
+                    <span>3.1.3&nbsp;</span>
+                    <span class="flex-col">
+                        <span>您承诺：如果您利用好雨提供的服务进行经营或非经营的活动需要获得国家有关部门的许可或批准的，应获得该有关的许可或批准。</span>
+                    </span>
+                </p>
+                <p class="flex">
+                    包括但不限于以下内容：
+                </p>
+
+                <ul class="level3-ul">
+                    <li class="flex"><span>（1）</span><span>您的企业/团队在使用 Rainbond 之前须要注册 Rainbond 的账户，同时您须要仔细阅读 Rainbond
+                            的《服务条款》，并在充分阅读和理解了相关协议的约定后提交必要的信息完成注册；</span></li>
+                    <li class="flex"><span>（2）</span><span>如果您在 Rainbond
+                            服务上创建、服务了多个企业/团队，须保证所涉及的全部企业/团队行为符合国家有关部门的规范和标准；</span></li>
+                    <li class="flex">
+                        <span>（3）</span><span>除好雨明示许可外，不得修改、翻译、改编、出租、转许可、传播或转让好雨提供的服务或软件，也不得逆向工程、反编译或试图以其他方式发现好雨提供的服务或软件的源代码；</span>
+                    </li>
+                    <li class="flex"><span>（4）</span><span>若好雨的服务涉及第三方软件之许可使用的，您同意遵守相关的许可协议的约束；</span></li>
+                    <li class="flex"><span>（5）</span><span>不利用好雨提供的资源和服务上传、下载、储存、发布如下信息或者内容，不为他人发布该等信息提供任何便利：</span>
+                    </li>
+                    <li>
+                        <ul class="disc-ul">
+                            <li>违反国家规定的政治宣传和/或新闻信息；</li>
+                            <li>涉及国家秘密和/或安全的信息；</li>
+                            <li>封建迷信和/或淫秽、色情、下流的信息或教唆犯罪的信息；</li>
+                            <li>博彩有奖、赌博游戏、“私服”、“外挂”等非法互联网出版活动；</li>
+                            <li>违反国家民族和宗教政策的信息；</li>
+                            <li>妨碍互联网运行安全的信息；</li>
+                            <li>侵害他人合法权益的信息和/或其他有损于社会秩序、社会治安、公共道德的信息或内容；</li>
+                            <li>其他违反法律法规、部门规章或国家政策的内容。</li>
+                        </ul>
+                    </li>
+                    <li class="flex"><span>（6）</span><span>不应执行任何导致 Rainbond
+                            服务不可访问或者好雨的其他用户的服务不可使用的操作和行为，不进行任何改变或试图改变好雨提供的系统配置或破坏系统安全的行为，不从事其他违法、违规或违反好雨服务条款的行为；</span>
+                    </li>
+                    <li class="flex">
+                        <span>（7）</span><span>不进行任何破坏或试图破坏网络安全的行为。（包括但不限于钓鱼，黑客，网络诈骗，存储含有或涉嫌散播病毒的恶意代码）</span></li>
+                </ul>
+
+                <p class="flex level3">
+                    <span>3.1.4&nbsp;</span>
+                    <span>
+                        您不应在好雨服务或平台之上存储和使用违反国家法律规定的文件、代码等字眼；您对自己行为所引起的结果承担全部责任。
+                    </span>
+                </p>
+                <p class="flex level3">
+                    <span>3.1.5&nbsp;</span>
+                    <span>
+                        您对自己存放在 Rainbond 上的数据以及进入和管理 Rainbond
+                        上各类产品与服务的口令、密码的完整性和保密性负责。因您维护不当或保密不当致使上述数据、口令、密码等丢失或泄漏所引起的一切损失和后果均由您自行承担。
+                    </span>
+                </p>
+                <p class="flex level3">
+                    <span>3.1.6&nbsp;</span>
+                    <span>
+                        您应向好雨提交执行本服务条款的联系人和管理用户网络及 Rainbond
+                        上各类产品与服务的人员名单和联系方式并提供必要的协助。如以上人员发生变动，您应自行将变动后的信息进行在线更新并及时通知好雨。因您提供的人员的信息不真实、不准确、不完整，以及因以上人员的行为或不作为而产生的结果，均由您负责。
+                    </span>
+                </p>
+                <p class="flex level3">
+                    <span>3.1.7&nbsp;</span>
+                    <span>
+                        您对您存放在 Rainbond
+                        上的数据内容负责，如因上传、发布的公开信息违反法律法规、部门规章或国家政策，由此造成的全部结果及责任由您自行承担。好雨对此予以监督、向您提示不合规或疑似不合规内容，并郑重提示您谨慎判断数据内容的合法性。
+                    </span>
+                </p>
+                <p class="flex level3">
+                    <span>3.1.8&nbsp;</span>
+                    <span>
+                        您了解好雨无法保证其所提供的服务毫无瑕疵，但好雨承诺不断提升服务质量及服务水平。所以您同意：即使好雨提供的服务存在瑕疵，但上述瑕疵是当时行业技术水平所无法避免的，其将不被视为好雨违约。您同意和好雨一同合作解决上述瑕疵问题。
+                    </span>
+                </p>
+                <p class="flex level3">
+                    <span>3.1.9&nbsp;</span>
+                    <span>
+                        为了数据的安全，您应负责您数据的备份工作。
+                    </span>
+                </p>
+
+                <p class="flex">
+                    <span>3.2&nbsp;</span>
+                    <span>好雨的权利和义务</span>
+                </p>
+                <p class="flex level3">
+                    <span>3.2.1&nbsp;</span>
+                    <span>
+                        好雨应按照服务条款约定提供服务。
+                    </span>
+                </p>
+                <p class="flex level3">
+                    <span>3.2.2&nbsp;</span>
+                    <span>
+                        好雨为付费用户提供 7×24 售后电话咨询服务和在线工单服务系统，解答客户在使用中的问题。
+                    </span>
+                </p>
+                <p class="flex level3">
+                    <span>3.2.3&nbsp;</span>
+                    <span>
+                        好雨将全力消除您非人为操作所出现的故障，但因您原因和/或不可抗力以及非好雨控制范围之内的事项除外。
+                    </span>
+                </p>
+                <p class="flex level3">
+                    <span>3.2.4&nbsp;</span>
+                    <span>
+                        如因账号和项目转让出现任何纠纷，将由提供者和接受者双方解决，好雨不对双方之间的达成的或涉及的法定和/或契约责任承担任何责任。
+                    </span>
+                </p>
+                <p class="flex level3">
+                    <span>3.2.5&nbsp;</span>
+                    <span>
+                        好雨依据本条款约束获取的与您个人及您企业/团队相关的任何信息均将依照本条款约定范围安全使用。
+                    </span>
+                </p>
+                <p class="flex level3">
+                    <span>3.2.6&nbsp;</span>
+                    <span>
+                        如果您采取了以下好雨反对和禁止行为，好雨有权终止/暂停您使用 Rainbond
+                        的权利，并将视该行为引起后果的严重性追究责任，并保留通过法律途径追偿合理损失的权利。以下行为是好雨坚决反对和禁止的行为：
+                    </span>
+                </p>
+                <ul class="level3-ul marginLeft64">
+                    <li class="flex"><span>（1）</span><span>在使用 Rainbond 时，恶意注册他人公司;</span></li>
+                    <li class="flex"><span>（2）</span><span>对网站服务器进行恶意攻击， 或者采取恶意手段使用 Rainbond，造成服务器异常;</span></li>
+                    <li class="flex"><span>（3）</span><span>使用 Rainbond 从事非法活动或者为非法活动提供帮助。</span></li>
+                </ul>
+
+                <p class="flex level3">
+                    <span>3.2.7&nbsp;</span>
+                    <span>
+                        如好雨发现您违反本服务条款的约定，有权根据情况采取相应的处理措施，包括但不限于立即终止服务、中止服务或删除相应信息等。如果第三方机构或个人对您提出质疑或投诉，好雨将通知您，您有责任在规定时间内进行说明并出具证明材料，如您未能提供相反证据或您逾期未能反馈的，好雨将采取包括但不限于立即终止服务、中止服务或删除相应信息等处理措施。因您未及时更新联系方式或联系方式不正确而致使未能联系到您的，亦视为您逾期未能反馈。
+                    </span>
+                </p>
+                <p class="flex level3">
+                    <span>3.2.8&nbsp;</span>
+                    <span>
+                        由于您违反了本服务条款的相关规定而导致账户不可用，好雨不承诺退还付费产品的服务费。
+                    </span>
+                </p>
+                <p class="flex level3">
+                    <span>3.2.9&nbsp;</span>
+                    <span>
+                        好雨有义务通过严格的管理制度规范产品的研发、运维、运营，尽最大努力保护用户数据的安全性和隐私性。
+                    </span>
+                </p>
+
+            </li>
+
+            <li>
+                <strong>用户数据</strong>
+                <p class="flex">
+                    <span>4.1&nbsp;</span>
+                    <span>
+                        好雨尊重用户的隐私信息，当您注册本网站的时会被要求提供企业名称、企业域名、个人姓名、电子邮件、电话号码等基本信息。根据您与好雨协商一致，好雨恪守对用户的安全承诺，根据适用的法律保护用户基本信息
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>4.2&nbsp;</span>
+                    <span>
+                        好雨理解并认可，您通过好雨提供的服务产生的所有数据，均为您的用户业务数据，您完全拥有您的用户业务数据。根据您与好雨协商一致，好雨恪守对用户的安全承诺，根据适用的法律保护和使用用户业务数据。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>4.3&nbsp;</span>
+                    <span>
+                        就用户业务数据，好雨除执行您的服务要求外，不进行任何未获授权的使用及披露，但以下情形除外：
+                    </span>
+                </p>
+                <ul class="level3-ul">
+                    <li class="flex">
+                        <span>（1）</span>在国家有关机关依法查询或调阅用户业务数据时，好雨具有按照相关法律法规或政策文件要求提供配合，并向第三方或者行政、司法等机构披露的义务；<span></span>
+                    </li>
+                    <li class="flex">
+                        <span>（2）</span>对用户将个人密码告知他人或与他人共享注册帐号所导致的任何个人资料和业务数据的泄露、丢失、被盗用或被篡改等，好雨不负任何责任；<span></span></li>
+                    <li class="flex"><span>（3）</span>您和好雨另行协商一致。<span></span></li>
+                </ul>
+                <p class="flex">
+                    <span>4.4&nbsp;</span>
+                    <span>
+                        您可自行对您的用户业务数据进行删除、更改等操作。如您自行删除数据的，好雨将按照您的指令不再保留该等数据。就数据的删除、更改等操作，您应谨慎操作。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>4.5&nbsp;</span>
+                    <span>
+                        当服务期届满、服务提前终止（包括但不限于双方协商一致提前终止，其他原因导致的提前终止等）或您发生欠费时，除法律法规明确约定、主管部门要求或双方另有约定外，好雨仅在一定的缓冲期内继续存储您的用户业务数据（如有），缓冲期届满好雨将删除所有用户业务数据，包括所有缓存或者备份的副本，不再保留您的任何用户业务数据。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>4.6&nbsp;</span>
+                    <span>
+                        用户业务数据一经删除，即不可恢复，您应自行承担数据因此被删除所引发的后果和责任。您理解并同意，好雨没有继续保留、导出或者返还用户业务数据的义务。
+                    </span>
+                </p>
+
+            </li>
+            <li>
+                <strong>隐私政策</strong>
+                <p class="no-text-indent">为保障更好的服务用户，好雨根据合法、正当、必要的原则，收集实现产品功能所必要的信息。
+                </p>
+                <p class="flex">
+                    <span>5.1&nbsp;</span>
+                    <span>
+                        您在使用 Rainbond 服务时主动提供的信息，包含：您在注册或使用服务时主动填写或上传的用户名、姓名、邮箱、手机号码、头像、图片、文档等。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>5.2&nbsp;</span>
+                    <span>
+                        您在使用按法定要求提供所必须信息的相关功能时，您必须配合提供的信息，包含不限于：实名身份认证、手机号码、邮箱地址、人脸识别信息等。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>5.3&nbsp;</span>
+                    <span>
+                        在您使用服务时， Rainbond 可能会自动收集信息，包含：设备信息，例如设备型号、操作系统版本、软件的版本号、浏览器类型、您推送代码时客户端的 IP 地址等。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>5.4&nbsp;</span>
+                    <span>
+                        好雨严格遵守法律法规，所收集的信息仅用于以下用途：
+                    </span>
+                </p>
+                <ul class="level3-ul">
+                    <li class="flex"><span>（1）</span>向您提供适合的产品服务；<span></span></li>
+                    <li class="flex"><span>（2）</span>满足您个性化的帮助服务；<span></span></li>
+                    <li class="flex"><span>（3）</span>产品开发和服务优化，例如当好雨的系统发生故障时，好雨会记录和分析系统故障时产生的信息，优化好雨的服务；<span></span>
+                    </li>
+                    <li class="flex"><span>（4）</span>安全保障，例如好雨会将您的信息用于身份验证、安全防范、反诈骗监测、存档备份、客户的安全服务等用途；<span></span></li>
+                    <li class="flex"><span>（5）</span>向您推荐您可能感兴趣的产品和服务等；<span></span></li>
+                    <li class="flex"><span>（6）</span>评估、改善好雨的广告投放和其他促销及推广活动的效果；<span></span></li>
+                    <li class="flex"><span>（7）</span>邀请您参与有关好雨服务的调查。<span></span></li>
+                </ul>
+                <p class="flex">
+                    <span>5.5&nbsp;</span>
+                    <span>
+                        Rainbond 会使用 Cookie 及相关技术。Rainbond 或 Rainbond 的第三方合作伙伴，可能通过放置安全的 Cookie
+                        及相关技术收集您的信息，目的是为您提供更个性化的用户体验和服务。好雨会严格要求第三方合作伙伴遵守本政策的相关规定。您也可以通过浏览器设置管理 Cookie。但请注意，如果停用
+                        Cookie，您就不能使用 Rainbond 的各项交互功能。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>5.6&nbsp;</span>
+                    <span>
+                        您需要对您主动分享的信息负责。您可以通过 Rainbond
+                        的服务与您的同事、团队成员、服务客户等其他用户分享您的相关信息。请注意，这其中可能包含您的个人身份信息、个人财产信息、公司财务信息等敏感信息，请您谨慎考虑披露您个人及公司的敏感信息。您可以通过好雨服务的设置功能或好雨提供的指引删除您公开分享的信息。但请您注意，这些信息仍可能由其他用户或不受好雨控制的非关联第三方独立地保存。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>5.7&nbsp;</span>
+                    <span>
+                        出于对业务运营进行相关审计需要、相关运营需要以及法规要求，如实名身份认证、邮件、短信、咨询的推送或通知，需要雇用第三方服务商提供相应的服务，好雨可能需要将您的企业/团队或个人的信息与这些公司共享，好雨会要求服务提供商按照好雨的说明、隐私政策以及其他相关的保密和安全措施来提供服务。除此之外，未经您的同意，好雨不会与第三方分享任何您的个人信息。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>5.8&nbsp;</span>
+                    <span>
+                        您在使用服务期间可以管理自己的信息。您可以在使用好雨服务的过程中，访问、修改和删除您提供的注册信息和其他个人信息，也可按照通知指引与好雨联系。您访问、修改和删除个人信息的范围和方式将取决于您使用的具体服务。在您访问、修改和删除相关信息时，好雨可能会要求您进行身份验证，以保障帐号的安全。好雨将按照本政策所述，仅为实现好雨产品或服务的功能，收集、使用您的信息。如您发现好雨违反法律、行政法规的规定或者双方的约定收集、使用您的个人信息，您可以要求好雨删除。如您发现好雨收集、存储的您的个人信息有错误的，您可以要求好雨更正。
+                    </span>
+                </p>
+
+                <p class="flex">
+                    <span>5.9&nbsp;</span>
+                    <span>
+                        随着好雨业务的持续发展，当发生合并、收购、资产转让等交易导致向第三方分享您的个人信息时，好雨将通过推送通知、公告等形式告知您相关情形，按照法律法规及不低于本政策所要求的标准继续保护或要求新的管理者继续保护您的个人信息。好雨收集的信息被视作一项资产。如果好雨或好雨任何附属公司、部门或部分资产被另一家公司收购，则此类信息可能成为被转让资产之一。如果情况如此，收购方公司只能按照此隐私策略（或者向您收集信息时有效的后续策略）使用您的信息。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>5.10&nbsp;</span>
+                    <span>
+                        好雨可能基于以下目的披露您的个人信息：
+                    </span>
+                </p>
+                <ul class="level3-ul">
+                    <li class="flex"><span>（1）</span><span>遵守适用的法律法规等有关规定；</span></li>
+                    <li class="flex"><span>（2）</span><span>遵守法院判决、裁定或其他法律程序的规定；</span></li>
+                    <li class="flex"><span>（3）</span><span>遵守相关政府机关或其他法定授权组织的要求；</span></li>
+                    <li class="flex"><span>（4）</span><span>好雨有理由确信需要遵守法律法规等有关规定；</span></li>
+                    <li class="flex">
+                        <span>（5）</span><span>为执行相关服务协议或本政策、维护社会公共利益，为保护好雨的客户、好雨或好雨的关联公司、其他用户或雇员的人身财产安全或其他合法权益合理且必要的用途。</span>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <strong>知识产权</strong>
+                <p class="flex">
+                    <span>6.1&nbsp;</span>
+                    <span>
+                        好雨对其提供的产品代码、支持服务及服务过程中可能产出代码、图纸、方案等作品独立享有知识产权，本协议不构成任何知识产权的转让或转移。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>6.2&nbsp;</span>
+                    <span>
+                        您在使用Rainbond过程中，向好雨提供的数据、软件、程序代码等作品享有知识产权，本协议不构成任何知识产权的转让或转移。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>6.3&nbsp;</span>
+                    <span>
+                        您应保证提交给好雨的作品、对好雨服务的使用及使用好雨服务所产生的成果未侵犯任何第三方的合法权益。如有第三方基于侵犯版权、侵犯第三人之权益或违反中国法律法规或其他适用的法律等原因而向好雨提起索赔、诉讼或可能向其提起诉讼,则您应赔偿好雨因此承担的费用或损失，并使好雨完全免责。如果第三方机构或个人对您使用好雨服务所涉及的相关素材的知识产权归属提出质疑或投诉，您有责任出具相关知识产权证明材料，并配合好雨相关投诉处理工作。您应保证提交给好雨的作品、对好雨服务的使用及使用好雨服务所产生的成果未侵犯任何第三方的合法权益。如有第三方基于侵犯版权、侵犯第三人之权益或违反中国法律法规或其他适用的法律等原因而向好雨提起索赔、诉讼或可能向其提起诉讼,则您应赔偿好雨因此承担的费用或损失，并使好雨完全免责。如果第三方机构或个人对您使用好雨服务所涉及的相关素材的知识产权归属提出质疑或投诉，您有责任出具相关知识产权证明材料，并配合好雨相关投诉处理工作。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>6.4&nbsp;</span>
+                    <span>
+                        在使用Rainbond过程中，双方不得披露对方商业秘密和技术秘密（包括但不限于产品设计方案、营销方案、交易信息及客户信息等）以及相关协议内容，双方均应承担保密义务。保密义务不因本协议的有效内满而终止。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>6.5&nbsp;</span>
+                    <span>
+                        双方同意在自身业务运营的范围内仅为必要宣传推广目的时，授权对方使用己方的商标品牌、标识、名称、商号、字号等。除此之外未经对方书面同意，不得擅自使用。
+                    </span>
+                </p>
+            </li>
+
+            <li>
+                <strong>期限与终止</strong>
+                <p class="flex">
+                    <span>7.1&nbsp;</span>
+                    <span>
+                        您安装、注册或任意形式使用好雨的服务，即视为您已阅读并接受本协议的约束。好雨有权在必要时修改本协议条款，您可以在相关服务页面查阅最新版本的协议条款。本协议条款变更后，如果您继续使用好雨提供的软件或服务，即视为您已接受修改后的协议。如果您不接受修改后的协议，应当停止使用好雨提供的软件和服务，并及时与好雨取得联系进行协商处理。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>7.2&nbsp;</span>
+                    <span>
+                        发生下列情形，服务期限提前终止：
+                    </span>
+                </p>
+                <ul class="level3-ul">
+                    <li class="flex"><span>（1）</span><span>双方协商一致提前终止的；</span></li>
+                    <li class="flex"><span>（2）</span><span>您严重违反本服务条款（包括但不限于 a.您未按照协议约定履行付款义务，及/或
+                            b.您严重违反法律规定等），好雨有权提前终止服务，并不退还您已经支付的费用； </span></li>
+                    <li class="flex">
+                        <span>（3）</span><span>您理解并充分认可，虽然好雨已经建立（并将根据技术的发展不断完善）必要的技术措施来防御包括计算机病毒、网络入侵和攻击破坏（包括但不限于
+                            DDOS）等危害网络安全的事项或行为（以下统称该等行为），但鉴于网络安全技术的局限性、相对性以及该等行为的不可预见性，如因此遭遇该等行为而带来危害，好雨可决定暂停或终止服务，如果终止服务的，将按照实际提供服务天数计算服务费用，将剩余款项（如有）返还；</span>
+                    </li>
+                    <li class="flex"><span>（4）</span><span>根据法律规定您应提交真实信息，而您提供的个人资料不真实或与注册时信息不一致又未能提供合理证明。</span></li>
+                </ul>
+                <p class="flex">
+                    <span>7.3&nbsp;</span>
+                    <span>
+                        若您使用了好雨提供的 Rainbond 付费功能，但您未按时足额付费，好雨有权中断、中止或终止提供相关服务。
+                    </span>
+                </p>
+            </li>
+
+            <li>
+                <strong>违约责任</strong>
+                <p class="flex">
+                    <span>8.1&nbsp;</span>
+                    <span>
+                        本服务条款任何一方违约均须依法承担违约责任。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>8.2&nbsp;</span>
+                    <span>
+                        您理解，鉴于计算机、互联网的特殊性，下述情况不属于好雨违约：
+                    </span>
+                </p>
+                <ul class="level3-ul">
+                    <li class="flex"><span>（1）</span><span>好雨进行相关服务升级、维护时，需要短时间中断服务；</span></li>
+                    <li class="flex"><span>（2）</span><span>由于 Internet 上的通路阻塞或底层服务商原因造成网站和服务访问速度下降；</span></li>
+                    <li class="flex"><span>（3）</span><span>由于不可抗力导致好雨提供服务的异常状态。</span></li>
+                </ul>
+                <p class="flex">
+                    <span>8.3&nbsp;</span>
+                    <span>
+                        如因好雨原因，造成您连续 3 个工作日不能正常使用服务的，您可以终止服务，但非好雨控制之内的原因引起的除外。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>8.4&nbsp;</span>
+                    <span>
+                        在任何情况下，好雨均不对任何间接性、后果性、惩戒性、偶然性、特殊性的损害，包括您使用好雨服务而遭受的利润损失承担责任。（即您已被告知该等损失的可能性）
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>8.5&nbsp;</span>
+                    <span>
+                        在任何情况下，好雨对本服务条款所承担的违约赔偿责任总额不超过违约服务对应之服务费总额。
+                    </span>
+                </p>
+            </li>
+
+            <li>
+                <strong>不可抗力</strong>
+                <p class="flex">
+                    <span>9.1&nbsp;</span>
+                    <span>
+                        因不可抗力或者其他意外事件，使得本服务条款的履行不可能、不必要或者无意义的，遭受不可抗力、意外事件的一方不承担责任。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>9.2&nbsp;</span>
+                    <span>
+                        不可抗力、意外事件是指不能预见、不能克服并不能避免且对一方或双方当事人造成重大影响的客观事件，包括但不限于自然灾害如洪水、地震、瘟疫流行等以及社会事件如战争、动乱、政府行为、电信主干线路中断、黑客、网路堵塞、电信部门技术调整和政府管制等。出现上述情况时，好雨将努力在第一时间与相关单位配合，及时进行修复，但是由此给您造成的损失，好雨在法律允许的范围内免责。
+                    </span>
+                </p>
+            </li>
+
+            <li>
+                <strong>法律适用及争议解决</strong>
+                <p class="flex">
+                    <span>10.1&nbsp;</span>
+                    <span>
+                        本服务条款受中华人民共和国法律管辖。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>10.2&nbsp;</span>
+                    <span>
+                        在执行本服务条款过程中如发生纠纷，双方应及时协商解决。协商不成时，均由中华人民共和国(好雨所在地)人民法院管辖。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>10.3&nbsp;</span>
+                    <span>
+                        如果本服务条款中的部分条款被有关机关认定为无效，则此无效部分并不影响本使用条款其它部分的效力，其它部分仍然有效。
+                    </span>
+                </p>
+            </li>
+
+            <li>
+                <strong>附加说明</strong>
+                <p class="flex">
+                    <span>11.1&nbsp;</span>
+                    <span>
+                        好雨提供的官网、产品等相关页面上的服务说明、价格说明和您确认同意的订购页面是本服务条款不可分割的一部分。如果相关页面上的服务说明、价格说明和您确认同意的订购页面与本服务条款有不一致之处，以本服务条款为准。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>11.2&nbsp;</span>
+                    <span>
+                        好雨有权以提前 7 个工作日在官网上公布、网站内通知或书面通知的方式将本服务条款的权利义务全部或者部分转移给好雨的关联公司。
+                    </span>
+                </p>
+                <p class="flex">
+                    <span>11.3&nbsp;</span>
+                    <span>
+                        如果任何条款在性质上或其他方面理应地在此协议终止时继续存在，那么应视为继续存在的条款，这些条款包括但不局限于保证条款、保密条款、知识产权条款、法律适用及争议解决条款。
+                    </span>
+                </p>
+            </li>
+
+        </ol>
+        <hr>
+        <p class="bottom">此协议最后更新日期为 2020年 3月 10日，最终解释权归北京好雨科技有限公司所有。</p>
+    </div>
+    <footer class="footer-container">
+        <div class="footer">
+            <div class="left">
+                <a href="/">
+                    <img class="logo" src="./public/images/rainbond.png">
+                </a>
+                <ul class="list">
+                    <li>&nbsp;</li>
+                    <li style="width:200px;text-align:center;"><a href="tel:01064666786">010-64666786</a></li>
+                    <li>
+                        <div class="share" style="width:200px;justify-content: center;">
+                            <div class="share-item qrcode weixin">
+                                <img class="share-img" id="wechat" src="./public/images/weixin.png">
+                                <div class="dropdown up">
+                                    <img src="./public/images/weixin.jpeg" alt="Rainbond 微信公众号二维码">
+                                </div>
+                            </div>
+                            <a class="share-item" target="_blank" href="https://github.com/goodrain" target="_blank">
+                                <img class="share-img" src="./public/images/github.svg">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="us">
+                <div class="us-row">
+                    <div class="us-col item1">
+                        <h3>方案</h3>
+                        <ul class="list">
+                            <li><a target="_blank" href="https://www.goodrain.com/middle-platform/">搭建业务中台方案</a></li>
+                            <li><a target="_blank" href="https://www.goodrain.com/business/">搭建2B应用持续交付方案</a></li>
+                            <li><a target="_blank" href="https://www.goodrain.com/saas/">行业应用商店</a></li>
+                            <li>
+                                    <a class="visitor" data-title="请提供您的联系方式，我们将及时回访" data-source="企业官网底部联系我们">联系技术专家</a>
+
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="us-col item2">
+                        <h3>产品</h3>
+                        <ul class="list">
+                            <li><a target="_blank" href="https://www.rainbond.com">Rainbond</a></li>
+                            <li><a target="_blank" href="https://cloud.goodrain.com/enterprise-server/login">Rainbond Cloud</a></li>
+                            <li><a target="_blank" href="https://v5.2-doc.rainbond.com/docs/quick-start/rainbond_install/">Rainbond 开源</a></li>
+                            <li><a class="visitor" data-title="请提供您的联系方式，我们将及时回访" data-source="企业官网底部联系我们">产品定制咨询</a></li>
+                        </ul>
+                    </div>
+                    <div class="us-col item3">
+                        <h3>资源</h3>
+                        <ul class="list">
+                            <li><a target="_blank" href="https://v5.2-doc.rainbond.com/docs/">文档</a></li>
+                            <li><a target="_blank" href="https://t.goodrain.com/" target="_blank">社区</a></li>
+                            <li><a target="_blank" href="https://v5.2-doc.rainbond.com/video/" target="_blank">视频</a></li>
+                            <li><a target="_blank" href="https://github.com/goodrain">Github</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="us-col item4">
+                        <h3>&nbsp;</h3>
+                        <ul class="list">
+                            <li>组织一个分享会，把我们介绍给你的团队</li>
+                            <li style="font-size: 12px">10min快速了解好雨科技Goodrain和云帮Rainbond</li>
+                            <li>
+                                <a class="visitor" data-title="请提供您的联系方式，我们将及时回访" data-source="企业官网底部联系我们">
+                                    <div class="demos">
+                                        <img src="./public/images/image_ys.png" alt="">
+                                        <span>预约演示</span>
+                                    </div>
+                                </a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="us-col item6">
+                        <h3>联系我们</h3>
+                        <ul class="list">
+                            <li><a href="tel:01064666786">010-64666786</a></li>
+                            <li>
+                                <div class="share">
+                                    <div class="share-item qrcode weixin">
+                                        <img class="share-img" id="wechat" src="./public/images/weixin.png">
+                                        <div class="dropdown up">
+                                            <img src="./public/images/weixin.jpeg" alt="Rainbond 微信公众号二维码">
+                                        </div>
+                                    </div>
+                                    <a class="share-item" href="https://github.com/goodrain" target="_blank">
+                                        <img class="share-img" src="./public/images/github.svg">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-hr first"></div>
+            <div class="mobile-hr second"></div>
+            <div class="mobile-hr three"></div>
+        </div>
+        <div class="copyright">
+            <div class="copyright-content">
+                <div class="info">
+                    <p class="cr-pc">
+                        <a href="/">© 2019 北京好雨科技有限公司 京ICP备15028663</a>
+                    </p>
+                    <div class="cr-mb">
+                        <p>
+                            <a href="https://coding.net">© 2019 北京好雨科技有限公司 京ICP备15028663</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var modalVisitor = new ModalVisitor({ width: 400, height: 430 });
+            $(".visitor").click(function () {
+                var title = $(this).data("title") || "申请Rainbond在线试用"
+                var source = $(this).data("source") || "好雨企业官网"
+                modalVisitor.show({title:title, source:source});
+            });
+    
+        });
+    </script>
+</body>
+
+</html>

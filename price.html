@@ -1,0 +1,689 @@
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="好雨提供以应用为中心的云计算产品服务，致力于通过无服务器PaaS——Rainbond和云原生SaaS——云市两款核心产品释放企业IT价值，帮助企业完成容器化、微服务架构、云原生、DevOps工作流、自动化运维等技术升级和转型，获得面向未来的竞争力和创新能力" />
+    <meta name="keywords"
+        content="好雨, goodrain, Rainbond, 云帮, 以应用为中心, serverless, PaaS, SaaS, Kubernetes, 微服务架构, servicemesh, DevOps, CI/CD, 高效运维, 云原生, 公有云, 私有云, 混合云, 应用交付, 微服务, 容器云, 容器云平台, 容器云服务, 镜像构建, 源码构建, 云原生应用, 微服务, 微服务平台, springcloud微服务架构, service mesh, 服务网格, 微服务设计, sidecar, 行业云, 开发云, 智慧云, 云计算解决方案" />
+    <meta name="viewport" content="width=1280,minimum-scale=0.5,maximum-scale=1.0,user-scalable=yes, initial-scale=1.0">
+    <title>好雨，让云落地_提供以应用为中心的云计算产品和服务 :: 好雨，让云落地_提供以应用为中心的云计算产品和服务</title>
+    <script type="text/javascript" src="./public/js/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="https://www.rainbond.com/js/visitor.js"></script>
+    <link href="./public/css/price.css" rel="stylesheet">
+    <link href="./public/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.rainbond.com/css/visitor.css">
+
+</head>
+
+<body>
+    <header class="header-container common clearfix login-checked no-touch ">
+        <div class="header-content">
+            <div class="header-body">
+                <div class="icon">
+                    <span class="nav-trigger"></span>
+                </div>
+                <div class="logo">
+                    <a href="/">
+                        <img src="./public/images/rainbond-online-log.svg">
+                    </a>
+                </div>
+                <div class="nav">
+                    <!-- <div class="nav-item nav-drop-down-wrap">
+                        <span>产品</span>
+                        <div class="nav-drop-down-container">
+                            <div class="nav-drop-down">
+                                <div class="item-container">
+                                    <p><a href="/">功能</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="nav-item">
+                        <span><a href="/">产品</a></span>
+                    </div>
+                    <div class="nav-item">
+                        <span><a href="/">价格</a></span>
+                    </div>
+                    <div class="nav-item nav-drop-down-wrap">
+                        <span>解决方案</span>
+                        <div class="nav-drop-down-container">
+                            <div class="nav-drop-down">
+                                <div class="item-container">
+                                    <p> <a href="https://www.goodrain.com/middle-platform/" target="_blank">搭建业务中台方案</a>
+                                    </p>
+                                    <p><a href="https://www.goodrain.com/business/" target="_blank">企业应用持续交付方案</a></p>
+                                    <p><a href="https://www.goodrain.com/saas/" target="_blank">行业应用商店</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="login-zone">
+                    <div class="login">
+                        <a target="_blank" href="https://cloud.goodrain.com/enterprise-server/login"
+                            class="button">登录</a>
+                    </div>
+                    <div class="register">
+                        <a target="_blank" href="https://cloud.goodrain.com/enterprise-server/registered"
+                            class="button">免费注册</a>
+                    </div>
+                </div>
+                <div class="mobile-nav">
+                    <div class="dropdown-list">
+                        <ul>
+                            <li class="dropdown has-submenu">
+                                <span class="label">产品</span>
+                                <div class="content">
+                                    <div class="menu">
+                                        <div class="content-label"><a href="/">功能</a></div>
+                                    </div>
+                                </div>
+                    </div>
+                    </li>
+                    <li class="dropdown">
+                        <span class="label"><a href="/pricing">价格</a></span>
+                    </li>
+                    <li class="dropdown has-submenu">
+                        <span class="label">解决方案</span>
+                        <div class="content">
+                            <div class="menu">
+                                <div class="content-label">
+                                    <a href="https://www.goodrain.com/middle-platform/" target="_blank">搭建业务中台方案</a>
+                                </div>
+                                <div class="content-label"><a href="https://www.goodrain.com/business/"
+                                        target="_blank">企业应用持续交付方案</a></div>
+                                <div class="content-label"><a href="https://www.goodrain.com/saas/"
+                                        target="_blank">行业应用商店</a></div>
+                            </div>
+                        </div>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="icon-user">登录/注册</div>
+            <div class="mobile-login-zone">
+                <div class="dropdown-list">
+                    <ul>
+                        <li class="dropdown">
+                            <div class="btn register">
+                                <a href="https://cloud.goodrain.com/enterprise-server/registered">免费注册</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <div class="btn login">
+                                <a href="https://cloud.goodrain.com/enterprise-server/login">登录</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+    <div class="container index-container">
+        <div class="content layout">
+            <section class="price-section">
+                <div class="heading">
+                    <h2 id="PriceTitle">涵盖 企业应用生命周期 全部所需</h2>
+                    <!-- <p><span id="CompareFlag">了解使用 Rainbond 成本优势</span></p> -->
+                </div>
+
+            </section>
+            <section class="detail-section">
+                <div class="section-content">
+                    <h2 class="title navShow">
+                        请选择适合您团队的服务
+                    </h2>
+                    <div class="table-zsl">
+                        <div class="table-zsl-l">
+                        </div>
+                        <div class="table-zsl-r">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h3 style="font-size:20px;">
+                                                开源版
+                                            </h3>
+                                        </td>
+                                        <td colspan="2">
+                                            <h3 style="font-size:20px;">
+                                                Rainbond Cloud (在线服务)
+                                            </h3>
+                                        </td>
+                                        <td>
+                                            <h3 style="font-size:20px;">
+                                                Rainbond Enterprise<br />（企业版）
+                                            </h3>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">免费 <a
+                                                href="https://v5.2-doc.rainbond.com/docs/quick-start/rainbond_install/"
+                                                target="_blank" style="color:#1890ff">LGPL-3.0 license</a></td>
+                                        <td>免费版</td>
+                                        <td>付费版</td>
+                                        <td rowspan="2">联系销售</td>
+                                    </tr>
+                                    <tr>
+                                        <td>免费</td>
+                                        <td>¥<span style="color:#1890ff;font-size: 26px;">49</span>/G/月</td>
+                                    </tr>
+                                    <tr>
+                                        <td>在线、离线部署在物理机、虚拟机、云主机、K8s集群上</td>
+                                        <td colspan="2">注册使用，对接公有云K8S集群，委托Rainbond运维</td>
+                                        <td>私有化企业交付部署</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="body">
+                        <h3 class="tit no-padding-top">资源配额</h3>
+                        <div class="body-content">
+                            <div class="body-left">
+                                <div class="card resource">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>应用调度内存（GB）</td>
+                                                <td>不限</td>
+                                                <td>30</td>
+                                                <td>根据购买量</td>
+                                            </tr>
+                                            <tr>
+                                                <td>团队（租户）数</td>
+                                                <td>不限</td>
+                                                <td>1个团队</td>
+                                                <td>不限</td>
+                                            </tr>
+                                            <tr>
+                                                <td>用户数</td>
+                                                <td>不限</td>
+                                                <td>5个用户</td>
+                                                <td>不限</td>
+                                            </tr>
+                                            <tr>
+                                                <td>管理集群</td>
+                                                <td>1个集群</td>
+                                                <td>1个集群</td>
+                                                <td>不限</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="card feature">
+                                    <h3 class="tit">产品功能</h3>
+                                    <table>
+                                        <tbody>
+
+                                            <tr>
+                                                <td>应用管理平台</td>
+                                                <td>
+                                                    <svg fill="currentColor" preserveAspectRatio="xMidYMid meet"
+                                                        height="16px" width="16px" viewBox="0 0 18 18"
+                                                        class="cuk-icon cuk-icon-check null"
+                                                        style="vertical-align: middle;">
+                                                        <g>
+                                                            <path
+                                                                d="m16.03125 3.33984375h-1.2287109c-.1722657 0-.3357422.07910156-.441211.21445312l-7.24746091 9.18105473-3.47519531-4.40332035c-.10722657-.13535156-.26894532-.21445313-.44121094-.21445313h-1.22871094c-.11777344 0-.1828125.13535157-.11074219.22675782l4.81464844 6.09960936c.225.2847656.65742187.2847656.88417969 0l8.58515626-10.87910155c.0720703-.08964844.0070312-.225-.1107422-.225z"
+                                                                fill-rule="evenodd"></path>
+                                                        </g>
+                                                    </svg>
+                                                </td>
+                                                <td>
+                                                    <span><svg fill="currentColor" preserveAspectRatio="xMidYMid meet"
+                                                            height="16px" width="16px" viewBox="0 0 18 18"
+                                                            class="cuk-icon cuk-icon-check null"
+                                                            style="vertical-align: middle;">
+                                                            <g>
+                                                                <path
+                                                                    d="m16.03125 3.33984375h-1.2287109c-.1722657 0-.3357422.07910156-.441211.21445312l-7.24746091 9.18105473-3.47519531-4.40332035c-.10722657-.13535156-.26894532-.21445313-.44121094-.21445313h-1.22871094c-.11777344 0-.1828125.13535157-.11074219.22675782l4.81464844 6.09960936c.225.2847656.65742187.2847656.88417969 0l8.58515626-10.87910155c.0720703-.08964844.0070312-.225-.1107422-.225z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </g>
+                                                        </svg></span>
+                                                </td>
+                                                <td>
+                                                    <span><svg fill="currentColor" preserveAspectRatio="xMidYMid meet"
+                                                            height="16px" width="16px" viewBox="0 0 18 18"
+                                                            class="cuk-icon cuk-icon-check null"
+                                                            style="vertical-align: middle;">
+                                                            <g>
+                                                                <path
+                                                                    d="m16.03125 3.33984375h-1.2287109c-.1722657 0-.3357422.07910156-.441211.21445312l-7.24746091 9.18105473-3.47519531-4.40332035c-.10722657-.13535156-.26894532-.21445313-.44121094-.21445313h-1.22871094c-.11777344 0-.1828125.13535157-.11074219.22675782l4.81464844 6.09960936c.225.2847656.65742187.2847656.88417969 0l8.58515626-10.87910155c.0720703-.08964844.0070312-.225-.1107422-.225z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </g>
+                                                        </svg></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>IaaS资源托管</td>
+
+                                                <td></td>
+                                                <td><svg fill="currentColor" preserveAspectRatio="xMidYMid meet"
+                                                        height="16px" width="16px" viewBox="0 0 18 18"
+                                                        class="cuk-icon cuk-icon-check null"
+                                                        style="vertical-align: middle;">
+                                                        <g>
+                                                            <path
+                                                                d="m16.03125 3.33984375h-1.2287109c-.1722657 0-.3357422.07910156-.441211.21445312l-7.24746091 9.18105473-3.47519531-4.40332035c-.10722657-.13535156-.26894532-.21445313-.44121094-.21445313h-1.22871094c-.11777344 0-.1828125.13535157-.11074219.22675782l4.81464844 6.09960936c.225.2847656.65742187.2847656.88417969 0l8.58515626-10.87910155c.0720703-.08964844.0070312-.225-.1107422-.225z"
+                                                                fill-rule="evenodd"></path>
+                                                        </g>
+                                                    </svg></td>
+                                                <td>
+                                                    <span><svg fill="currentColor" preserveAspectRatio="xMidYMid meet"
+                                                            height="16px" width="16px" viewBox="0 0 18 18"
+                                                            class="cuk-icon cuk-icon-check null"
+                                                            style="vertical-align: middle;">
+                                                            <g>
+                                                                <path
+                                                                    d="m16.03125 3.33984375h-1.2287109c-.1722657 0-.3357422.07910156-.441211.21445312l-7.24746091 9.18105473-3.47519531-4.40332035c-.10722657-.13535156-.26894532-.21445313-.44121094-.21445313h-1.22871094c-.11777344 0-.1828125.13535157-.11074219.22675782l4.81464844 6.09960936c.225.2847656.65742187.2847656.88417969 0l8.58515626-10.87910155c.0720703-.08964844.0070312-.225-.1107422-.225z"
+                                                                    fill-rule="evenodd"></path>
+                                                            </g>
+                                                        </svg></span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>多云管理</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td><svg fill="currentColor" preserveAspectRatio="xMidYMid meet"
+                                                        height="16px" width="16px" viewBox="0 0 18 18"
+                                                        class="cuk-icon cuk-icon-check null"
+                                                        style="vertical-align: middle;">
+                                                        <g>
+                                                            <path
+                                                                d="m16.03125 3.33984375h-1.2287109c-.1722657 0-.3357422.07910156-.441211.21445312l-7.24746091 9.18105473-3.47519531-4.40332035c-.10722657-.13535156-.26894532-.21445313-.44121094-.21445313h-1.22871094c-.11777344 0-.1828125.13535157-.11074219.22675782l4.81464844 6.09960936c.225.2847656.65742187.2847656.88417969 0l8.58515626-10.87910155c.0720703-.08964844.0070312-.225-.1107422-.225z"
+                                                                fill-rule="evenodd"></path>
+                                                        </g>
+                                                    </svg></td>
+                                            </tr>
+                                            <tr>
+                                                <td>多团队（租户管理）</td>
+                                                <td><svg fill="currentColor" preserveAspectRatio="xMidYMid meet"
+                                                        height="16px" width="16px" viewBox="0 0 18 18"
+                                                        class="cuk-icon cuk-icon-check null"
+                                                        style="vertical-align: middle;">
+                                                        <g>
+                                                            <path
+                                                                d="m16.03125 3.33984375h-1.2287109c-.1722657 0-.3357422.07910156-.441211.21445312l-7.24746091 9.18105473-3.47519531-4.40332035c-.10722657-.13535156-.26894532-.21445313-.44121094-.21445313h-1.22871094c-.11777344 0-.1828125.13535157-.11074219.22675782l4.81464844 6.09960936c.225.2847656.65742187.2847656.88417969 0l8.58515626-10.87910155c.0720703-.08964844.0070312-.225-.1107422-.225z"
+                                                                fill-rule="evenodd"></path>
+                                                        </g>
+                                                    </svg></td>
+                                                <td></td>
+                                                <td><svg fill="currentColor" preserveAspectRatio="xMidYMid meet"
+                                                        height="16px" width="16px" viewBox="0 0 18 18"
+                                                        class="cuk-icon cuk-icon-check null"
+                                                        style="vertical-align: middle;">
+                                                        <g>
+                                                            <path
+                                                                d="m16.03125 3.33984375h-1.2287109c-.1722657 0-.3357422.07910156-.441211.21445312l-7.24746091 9.18105473-3.47519531-4.40332035c-.10722657-.13535156-.26894532-.21445313-.44121094-.21445313h-1.22871094c-.11777344 0-.1828125.13535157-.11074219.22675782l4.81464844 6.09960936c.225.2847656.65742187.2847656.88417969 0l8.58515626-10.87910155c.0720703-.08964844.0070312-.225-.1107422-.225z"
+                                                                fill-rule="evenodd"></path>
+                                                        </g>
+                                                    </svg></td>
+                                            </tr>
+                                            <tr>
+                                                <td>应用商店</td>
+                                                <td>对接公有商店</td>
+                                                <td>对接任何商店</td>
+                                                <td>可开通企业应用商店</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ToB SaaS应用交付</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="unuse"><svg fill="currentColor"
+                                                        preserveAspectRatio="xMidYMid meet" height="16px" width="16px"
+                                                        viewBox="0 0 18 18" class="cuk-icon cuk-icon-check null"
+                                                        style="vertical-align: middle;">
+                                                        <g>
+                                                            <path
+                                                                d="m16.03125 3.33984375h-1.2287109c-.1722657 0-.3357422.07910156-.441211.21445312l-7.24746091 9.18105473-3.47519531-4.40332035c-.10722657-.13535156-.26894532-.21445313-.44121094-.21445313h-1.22871094c-.11777344 0-.1828125.13535157-.11074219.22675782l4.81464844 6.09960936c.225.2847656.65742187.2847656.88417969 0l8.58515626-10.87910155c.0720703-.08964844.0070312-.225-.1107422-.225z"
+                                                                fill-rule="evenodd"></path>
+                                                        </g>
+                                                    </svg></td>
+                                            </tr>
+                                            <tr>
+                                                <td>钉钉、企业微信集成</td>
+                                                <td></td>
+                                                <td class="unuse"><svg fill="currentColor"
+                                                        preserveAspectRatio="xMidYMid meet" height="16px" width="16px"
+                                                        viewBox="0 0 18 18" class="cuk-icon cuk-icon-check null"
+                                                        style="vertical-align: middle;">
+                                                        <g>
+                                                            <path
+                                                                d="m16.03125 3.33984375h-1.2287109c-.1722657 0-.3357422.07910156-.441211.21445312l-7.24746091 9.18105473-3.47519531-4.40332035c-.10722657-.13535156-.26894532-.21445313-.44121094-.21445313h-1.22871094c-.11777344 0-.1828125.13535157-.11074219.22675782l4.81464844 6.09960936c.225.2847656.65742187.2847656.88417969 0l8.58515626-10.87910155c.0720703-.08964844.0070312-.225-.1107422-.225z"
+                                                                fill-rule="evenodd"></path>
+                                                        </g>
+                                                    </svg></td>
+                                                <td class="unuse"><svg fill="currentColor"
+                                                        preserveAspectRatio="xMidYMid meet" height="16px" width="16px"
+                                                        viewBox="0 0 18 18" class="cuk-icon cuk-icon-check null"
+                                                        style="vertical-align: middle;">
+                                                        <g>
+                                                            <path
+                                                                d="m16.03125 3.33984375h-1.2287109c-.1722657 0-.3357422.07910156-.441211.21445312l-7.24746091 9.18105473-3.47519531-4.40332035c-.10722657-.13535156-.26894532-.21445313-.44121094-.21445313h-1.22871094c-.11777344 0-.1828125.13535157-.11074219.22675782l4.81464844 6.09960936c.225.2847656.65742187.2847656.88417969 0l8.58515626-10.87910155c.0720703-.08964844.0070312-.225-.1107422-.225z"
+                                                                fill-rule="evenodd"></path>
+                                                        </g>
+                                                    </svg></td>
+                                            </tr>
+                                            <tr>
+                                                <td>通知、告警</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td class="unuse"><svg fill="currentColor"
+                                                        preserveAspectRatio="xMidYMid meet" height="16px" width="16px"
+                                                        viewBox="0 0 18 18" class="cuk-icon cuk-icon-check null"
+                                                        style="vertical-align: middle;">
+                                                        <g>
+                                                            <path
+                                                                d="m16.03125 3.33984375h-1.2287109c-.1722657 0-.3357422.07910156-.441211.21445312l-7.24746091 9.18105473-3.47519531-4.40332035c-.10722657-.13535156-.26894532-.21445313-.44121094-.21445313h-1.22871094c-.11777344 0-.1828125.13535157-.11074219.22675782l4.81464844 6.09960936c.225.2847656.65742187.2847656.88417969 0l8.58515626-10.87910155c.0720703-.08964844.0070312-.225-.1107422-.225z"
+                                                                fill-rule="evenodd"></path>
+                                                        </g>
+                                                    </svg></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="card support">
+                                    <!-- <h3 style="text-align: center;padding-top:30px">
+                                        <a href="" style="color:1890ff;">探索完整 Rainbond 功能</a>
+                                    </h3> -->
+                                    <h3 class="tit">服务内容</h3>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">监控报警</td>
+                                                <td></td>
+                                                <td>平台级别监控</td>
+                                                <td>平台级别监控</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>(辅助搭建)业务级别监控</td>
+                                                <td>(辅助搭建)业务级别监控</td>
+                                            </tr>
+                                            <tr>
+                                                <td rowspan="3">监控报警</td>
+                                                <td>社区支持</td>
+                                                <td>社区支持</td>
+                                                <td>社区支持</td>
+                                            </tr>
+                                            <tr>
+                                                <td>文档支持</td>
+                                                <td>文档支持</td>
+                                                <td>文档支持</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>微信群响应（5*8 ）</td>
+                                                <td>专属服务团队（7*24 ）</td>
+                                            </tr>
+                                            <tr>
+                                                <td>培训课程</td>
+                                                <td>视频教程</td>
+                                                <td>视频教程</td>
+                                                <td>线上培训（1人天）</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="card support">
+                                    <h3 class="tit">服务保障</h3>
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>响应时间</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>
+                                                    <p>常规指导&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;< 24小时</p>
+                                                            <p>系统异常&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<
+                                                                12小时</p> <p>生产系统异常&nbsp;&nbsp;&nbsp;< 4小时</p> <p>
+                                                                    生产系统不可用&nbsp;< 1小时</p> </td> </tr> <tr>
+                                                <td>SLA</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>99.95%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="body-right">
+                                <ul>
+                                    <li>包含所有功能，并支持定制化</li>
+                                    <li>技术专家方案支持</li>
+                                    <li>专属服务团队7*24 售后技术支持</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="mb-img">
+                        <div id="my-gallery" class="my-gallery" data-pswp-uid="1">
+                            <figure>
+                                <a href="https://assets.codehub.cn/images/price.611563c7.jpg" data-size="2322x3166"
+                                    data-med="https://assets.codehub.cn/images/price.611563c7.jpg"
+                                    data-med-size="580x698">
+                                    <img src="https://assets.codehub.cn/images/price.611563c7.jpg" id="detail-img">
+                                </a>
+                            </figure>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="problem-section">
+                <div class="section-content">
+                    <h2 class="title">常见问题</h2>
+                    <div class="content">
+                        <div class="row">
+                            <div class="col col1">
+                                <div class="icon">“</div>
+                                <div class="info">
+                                    <h3>什么是应用调度内存？</h3>
+                                    <p>
+                                        应用调度内存并不是对接 K8s 集群的内存总量，而是通过Rainbond
+                                        Cloud管理和调度的应用内存总和，按照应用调度内存计费更能体现Rainbond面向应用全生命周期提供管理服务的价值。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col col2">
+                                <div class="icon">“</div>
+                                <div class="info">
+                                    <h3>如何申请开发票？</h3>
+                                    <p>
+                                        请联系售后服务专员，提供您的银行转账截图或充值记录、发票抬头、邮寄信息，我们将会在 7 个工作日内开票寄出。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col3">
+                                <div class="icon">“</div>
+                                <div class="info">
+                                    <h3>如何把我的业务迁移上来？</h3>
+                                    <p>
+                                        如果您是第一次接触Rainbond，可以参照相关文档进行注册、对接、迁移。如果您在业务迁移过程中遇到问题，请联系我们，我们将委派专业技术团队解决您的问题。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col col4">
+                                <div class="icon">“</div>
+                                <div class="info">
+                                    <h3>如何保障数据安全？</h3>
+                                    <p>
+                                        我们始终将用户数据的安全性和隐私性作为第一要位，用户核心业务数据全部处于用户购买的集群内，由用户100%掌握。好雨技术团队执行严格的研发管理制度，同时整站采用
+                                        SSL 加密，所有内容都必须通过 SSL 加密的方式才能访问；对于采取了数据实时备份、异地备份等多重手段保障用户数据信息安全。
+                                        <!-- <a href="https://help.coding.net/docs/common/code-security.html" target="_blank">数据安全方案</a> -->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="more"><a href="https://help.coding.net/" target="_blank">查看更多相关问题</a></div> -->
+                    </div>
+                </div>
+            </section>
+            <section class="plan-section">
+            </section>
+        </div>
+    </div>
+    <footer class="footer-container">
+        <div class="footer">
+            <div class="left">
+                <a href="/">
+                    <img class="logo" src="./public/images/rainbond.png">
+                </a>
+                <ul class="list">
+                    <li>&nbsp;</li>
+                    <li style="width:200px;text-align:center;"><a href="tel:01064666786">010-64666786</a></li>
+                    <li>
+                        <div class="share" style="width:200px;justify-content: center;">
+                            <div class="share-item qrcode weixin">
+                                <img class="share-img" id="wechat" src="./public/images/weixin.png">
+                                <div class="dropdown up">
+                                    <img src="./public/images/weixin.jpeg" alt="Rainbond 微信公众号二维码">
+                                </div>
+                            </div>
+                            <a class="share-item" target="_blank" href="https://github.com/goodrain" target="_blank">
+                                <img class="share-img" src="./public/images/github.svg">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="us">
+                <div class="us-row">
+                    <div class="us-col item1">
+                        <h3>方案</h3>
+                        <ul class="list">
+                            <li><a target="_blank" href="https://www.goodrain.com/middle-platform/">搭建业务中台方案</a></li>
+                            <li><a target="_blank" href="https://www.goodrain.com/business/">搭建2B应用持续交付方案</a></li>
+                            <li><a target="_blank" href="https://www.goodrain.com/saas/">行业应用商店</a></li>
+                            <li>
+                                <a class="visitor" data-title="请提供您的联系方式，我们将及时回访" data-source="企业官网底部联系我们">联系技术专家</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="us-col item2">
+                        <h3>产品</h3>
+                        <ul class="list">
+                            <li><a target="_blank" href="https://www.rainbond.com">Rainbond</a></li>
+                            <li><a target="_blank" href="https://cloud.goodrain.com/enterprise-server/login">Rainbond
+                                    Cloud</a></li>
+                            <li><a target="_blank"
+                                    href="https://v5.2-doc.rainbond.com/docs/quick-start/rainbond_install/">Rainbond
+                                    开源</a></li>
+                            <li><a class="visitor" data-title="请提供您的联系方式，我们将及时回访" data-source="企业官网底部联系我们">产品定制咨询</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="us-col item3">
+                        <h3>资源</h3>
+                        <ul class="list">
+                            <li><a target="_blank" href="https://v5.2-doc.rainbond.com/docs/">文档</a></li>
+                            <li><a target="_blank" href="https://t.goodrain.com/" target="_blank">社区</a></li>
+                            <li><a target="_blank" href="https://v5.2-doc.rainbond.com/video/" target="_blank">视频</a>
+                            </li>
+                            <li><a target="_blank" href="https://github.com/goodrain">Github</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="us-col item4">
+                        <h3>&nbsp;</h3>
+                        <ul class="list">
+                            <li>组织一个分享会，把我们介绍给你的团队</li>
+                            <li style="font-size: 12px">10min快速了解好雨科技Goodrain和云帮Rainbond</li>
+                            <li>
+                                <a class="visitor" data-title="请提供您的联系方式，我们将及时回访" data-source="企业官网底部联系我们">
+                                    <div class="demos">
+                                        <img src="./public/images/image_ys.png" alt="">
+                                        <span>预约演示</span>
+                                    </div>
+                                </a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="us-col item6">
+                        <h3>联系我们</h3>
+                        <ul class="list">
+                            <li><a href="tel:01064666786">010-64666786</a></li>
+                            <li>
+                                <div class="share">
+                                    <div class="share-item qrcode weixin">
+                                        <img class="share-img" id="wechat" src="./public/images/weixin.png">
+                                        <div class="dropdown up">
+                                            <img src="./public/images/weixin.jpeg" alt="Rainbond 微信公众号二维码">
+                                        </div>
+                                    </div>
+                                    <a class="share-item" href="https://github.com/goodrain" target="_blank">
+                                        <img class="share-img" src="./public/images/github.svg">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-hr first"></div>
+            <div class="mobile-hr second"></div>
+            <div class="mobile-hr three"></div>
+        </div>
+        <div class="copyright">
+            <div class="copyright-content">
+                <div class="info">
+                    <p class="cr-pc">
+                        <a href="/">© 2019 北京好雨科技有限公司 京ICP备15028663</a>
+                    </p>
+                    <div class="cr-mb">
+                        <p>
+                            <a href="https://coding.net">© 2019 北京好雨科技有限公司 京ICP备15028663</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            $(document).scroll(function () {
+                var scrTop = $(window).scrollTop();
+                // console.log('scrTop',scrTop)
+                if (scrTop > 269 && $(window).width() > 768 && scrTop < 1600) {
+                    $('.table-zsl').css({
+                        'position': 'fixed', 'top': '61', "z-index": 10, 'box-shadow': '0 1px 0 0 rgba(32, 33, 36, .28',
+                    })
+                    $('.table-zsl-r table').css({ 'border-top': '0' })
+                } else {//否则清空悬浮
+                    $('.table-zsl-r table').css({ 'border': '1px solid #dadfe6' })
+                    $('.table-zsl').css({ 'position': '', 'top': '', 'box-shadow': '' })
+                }
+            });
+        })
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var modalVisitor = new ModalVisitor({ width: 400, height: 430 });
+            $(".visitor").click(function () {
+                var title = $(this).data("title") || "申请Rainbond在线试用"
+                var source = $(this).data("source") || "好雨企业官网"
+                modalVisitor.show({ title: title, source: source });
+            });
+
+        });
+    </script>
+</body>
+
+</html>

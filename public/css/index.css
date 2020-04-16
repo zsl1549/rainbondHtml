@@ -1943,7 +1943,7 @@ br {
 
 body,
 html {
-  font-family: PingFang SC, Helvetica Neue, Hiragino Sans GB, Segoe UI, Microsoft YaHei, 寰蒋闆呴粦, sans-serif;
+  font-family: PingFang SC, Helvetica Neue, Hiragino Sans GB, Segoe UI, Microsoft YaHei, å¯°î†¿è’‹é—†å‘´ç²¦, sans-serif;
   font-size: 14px;
   line-height: 1.5;
   background: #fff;
@@ -2090,11 +2090,11 @@ li {
 }
 
 .slick-prev:before {
-  content: "鈫�";
+  content: "éˆ«ï¿½";
 }
 
 [dir="rtl"] .slick-prev:before {
-  content: "鈫�";
+  content: "éˆ«ï¿½";
 }
 
 .slick-next {
@@ -2107,11 +2107,11 @@ li {
 }
 
 .slick-next:before {
-  content: "鈫�";
+  content: "éˆ«ï¿½";
 }
 
 [dir="rtl"] .slick-next:before {
-  content: "鈫�";
+  content: "éˆ«ï¿½";
 }
 
 /* Dots */
@@ -2174,7 +2174,7 @@ li {
   left: 0;
   width: 20px;
   height: 20px;
-  content: "鈥�";
+  content: "éˆ¥ï¿½";
   text-align: center;
   opacity: 0.25;
   color: black;

@@ -15,7 +15,7 @@
     <link href="./public/css/terms.css" rel="stylesheet">
     <link href="./public/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.rainbond.com/css/visitor.css">
-  
+
 </head>
 
 <body>
@@ -42,34 +42,26 @@
                         </div>
                     </div> -->
                     <div class="nav-item">
-                            <span><a href="/">产品</a></span>
-                        </div>
-                    <div class="nav-item">
-                        <span><a href="/">价格</a></span>
+                        <span><a href="./price.html">价格</a></span>
                     </div>
-                    <div class="nav-item nav-drop-down-wrap">
-                        <span>解决方案</span>
-                        <div class="nav-drop-down-container">
-                            <div class="nav-drop-down">
-                                <div class="item-container">
-                                    <p> <a href="https://www.goodrain.com/middle-platform/" target="_blank">搭建业务中台方案</a>
-                                    </p>
-                                    <p><a href="https://www.goodrain.com/business/" target="_blank">企业应用持续交付方案</a></p>
-                                    <p><a href="https://www.goodrain.com/saas/" target="_blank">行业应用商店</a></p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="nav-item">
+                        <span><a href="./serviceTerms.html">服务条款</a></span>
+                    </div>
+                    <div class="nav-item">
+                        <span><a href="./serviceSLA.html">服务SLA</a></span>
                     </div>
                 </div>
                 <div class="login-zone">
                     <div class="login">
-                        <a target="_blank" href="https://cloud.goodrain.com/enterprise-server/login" class="button">登录</a>
+                        <a target="_blank" href="https://cloud.goodrain.com/enterprise-server/login"
+                            class="button">登录</a>
                     </div>
                     <div class="register">
-                        <a target="_blank" href="https://cloud.goodrain.com/enterprise-server/registered" class="button">免费注册</a>
+                        <a target="_blank" href="https://cloud.goodrain.com/enterprise-server/registered"
+                            class="button">免费注册</a>
                     </div>
                 </div>
-                <div class="mobile-nav">
+                <!-- <div class="mobile-nav">
                     <div class="dropdown-list">
                         <ul>
                             <li class="dropdown has-submenu">
@@ -82,7 +74,9 @@
                     </div>
                     </li>
                     <li class="dropdown">
-                        <span class="label"><a href="/pricing">价格</a></span>
+                        <span class="label">
+                            <a href="./price.html">价格</a>
+                        </span>
                     </li>
                     <li class="dropdown has-submenu">
                         <span class="label">解决方案</span>
@@ -99,7 +93,7 @@
                         </div>
                     </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
             <div class="icon-user">登录/注册</div>
             <div class="mobile-login-zone">
@@ -676,18 +670,22 @@
                             <li><a target="_blank" href="https://www.goodrain.com/business/">搭建2B应用持续交付方案</a></li>
                             <li><a target="_blank" href="https://www.goodrain.com/saas/">行业应用商店</a></li>
                             <li>
-                                    <a class="visitor" data-title="请提供您的联系方式，我们将及时回访" data-source="企业官网底部联系我们">联系技术专家</a>
+                                <a class="visitor" data-title="请提供您的联系方式，我们将及时回访" data-source="企业官网底部联系我们">联系技术专家</a>
 
-                                </li>
+                            </li>
                         </ul>
                     </div>
                     <div class="us-col item2">
                         <h3>产品</h3>
                         <ul class="list">
                             <li><a target="_blank" href="https://www.rainbond.com">Rainbond</a></li>
-                            <li><a target="_blank" href="https://cloud.goodrain.com/enterprise-server/login">Rainbond Cloud</a></li>
-                            <li><a target="_blank" href="https://v5.2-doc.rainbond.com/docs/quick-start/rainbond_install/">Rainbond 开源</a></li>
-                            <li><a class="visitor" data-title="请提供您的联系方式，我们将及时回访" data-source="企业官网底部联系我们">产品定制咨询</a></li>
+                            <li><a target="_blank" href="https://cloud.goodrain.com/enterprise-server/login">Rainbond
+                                    Cloud</a></li>
+                            <li><a target="_blank"
+                                    href="https://v5.2-doc.rainbond.com/docs/quick-start/rainbond_install/">Rainbond
+                                    开源</a></li>
+                            <li><a class="visitor" data-title="请提供您的联系方式，我们将及时回访" data-source="企业官网底部联系我们">产品定制咨询</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="us-col item3">
@@ -695,7 +693,8 @@
                         <ul class="list">
                             <li><a target="_blank" href="https://v5.2-doc.rainbond.com/docs/">文档</a></li>
                             <li><a target="_blank" href="https://t.goodrain.com/" target="_blank">社区</a></li>
-                            <li><a target="_blank" href="https://v5.2-doc.rainbond.com/video/" target="_blank">视频</a></li>
+                            <li><a target="_blank" href="https://v5.2-doc.rainbond.com/video/" target="_blank">视频</a>
+                            </li>
                             <li><a target="_blank" href="https://github.com/goodrain">Github</a></li>
                         </ul>
                     </div>
@@ -762,9 +761,9 @@
             $(".visitor").click(function () {
                 var title = $(this).data("title") || "申请Rainbond在线试用"
                 var source = $(this).data("source") || "好雨企业官网"
-                modalVisitor.show({title:title, source:source});
+                modalVisitor.show({ title: title, source: source });
             });
-    
+
         });
     </script>
 </body>

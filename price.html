@@ -42,13 +42,17 @@
                             </div>
                         </div>
                     </div> -->
+
                     <div class="nav-item">
-                        <span><a href="/">产品</a></span>
+                        <span><a href="./price.html">价格</a></span>
                     </div>
                     <div class="nav-item">
-                        <span><a href="/">价格</a></span>
+                        <span><a href="./serviceTerms.html">服务条款</a></span>
                     </div>
-                    <div class="nav-item nav-drop-down-wrap">
+                    <div class="nav-item">
+                        <span><a href="./serviceSLA.html">服务SLA</a></span>
+                    </div>
+                    <!-- <div class="nav-item nav-drop-down-wrap">
                         <span>解决方案</span>
                         <div class="nav-drop-down-container">
                             <div class="nav-drop-down">
@@ -60,7 +64,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="login-zone">
                     <div class="login">
@@ -72,7 +76,7 @@
                             class="button">免费注册</a>
                     </div>
                 </div>
-                <div class="mobile-nav">
+                <!-- <div class="mobile-nav">
                     <div class="dropdown-list">
                         <ul>
                             <li class="dropdown has-submenu">
@@ -85,7 +89,9 @@
                     </div>
                     </li>
                     <li class="dropdown">
-                        <span class="label"><a href="/pricing">价格</a></span>
+                        <span class="label">
+                            <a href="./price.html">价格</a>
+                        </span>
                     </li>
                     <li class="dropdown has-submenu">
                         <span class="label">解决方案</span>
@@ -102,7 +108,7 @@
                         </div>
                     </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
             <div class="icon-user">登录/注册</div>
             <div class="mobile-login-zone">
@@ -329,7 +335,7 @@
                                             <tr>
                                                 <td>应用商店</td>
                                                 <td>对接公有商店</td>
-                                                <td>对接任何商店</td>
+                                                <td>对接公有商店</td>
                                                 <td>可开通企业应用商店</td>
                                             </tr>
                                             <tr>
@@ -665,7 +671,10 @@
                         'position': 'fixed', 'top': '61', "z-index": 10, 'box-shadow': '0 1px 0 0 rgba(32, 33, 36, .28',
                     })
                     $('.table-zsl-r table').css({ 'border-top': '0' })
+                    $('.detail-section .body').css({ 'margin-top': '250px' })
+
                 } else {//否则清空悬浮
+                    $('.detail-section .body').css({ 'margin-top': '0' })
                     $('.table-zsl-r table').css({ 'border': '1px solid #dadfe6' })
                     $('.table-zsl').css({ 'position': '', 'top': '', 'box-shadow': '' })
                 }
